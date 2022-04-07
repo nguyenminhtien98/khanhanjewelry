@@ -1,0 +1,37 @@
+RewriteEngine On
+RewriteRule "index.html" "index.php"
+
+RewriteRule "^loai-trang-suc/(.*)-(.*).html$" "?xem=ds_sanpham&menu_id=$1&ten_khongdau=$2"
+RewriteRule "^trang-suc-giam-gia.html$" "?xem=ds_sp_giamgia"
+RewriteRule "^ve-chung-toi.html$" "?xem=ve-chung-toi&menu_id=9"
+
+RewriteRule "^trang-suc-ban-chay.html$" "?xem=ds_sanpham_banchay"
+RewriteRule "^trang-suc-moi-nhat.html$" "?xem=ds_sanpham_moi"
+
+
+RewriteRule "^trang-suc/(.*)-(.*).html$" "?xem=chitiet_sanpham&id_sanpham=$1&ten_khongdau=$2"
+
+RewriteRule "^tat-ca-trang-suc.html$" "?xem=ds_tatcatrangsuc&menu_id=4"
+RewriteRule "^tat-ca-trang-suc-(.*)&page=(.*).html$" "?xem=ds_tatcatrangsuc&menu_id=$1&page=$2"
+RewriteRule "^tat-ca-trang-suc/ban-chay.html$" "?xem=ds_tatcatrangsuc&menu_id=4&field=ban_chay&sort=desc"
+RewriteRule "^tat-ca-trang-suc/gia-giam-dan.html$" "?xem=ds_tatcatrangsuc&menu_id=4&field=gia_ban&sort=desc"
+RewriteRule "^tat-ca-trang-suc/gia-tang-dan.html$" "?xem=ds_tatcatrangsuc&menu_id=4&field=gia_ban&sort=asc"
+RewriteRule "^tat-ca-trang-suc/moi-nhat.html$" "?xem=ds_tatcatrangsuc&menu_id=4&field=moi_ve&sort=desc"
+
+RewriteRule "^gio-hang.html$" "?xem=giohang"
+
+RewriteRule "^thanh-toan.html$" "?xem=thanh_toan"
+RewriteRule "^thank-you-(.*).html$" "index.php?xem=dathang_thanhcong&id_donhang=$1"
+
+
+
+RewriteRule "^tim-kiem&tu-khoa=(.*).html$" "?query=$1&xem=tim-kiem"
+
+RewriteRule "^tim-kiem&tu-khoa=(.*).html$" "index.php?xem=tim-kiem&tu-khoa=$1"
+
+
+RewriteRule "^tat-ca-trang-suc/gia-giam-dan/page=(.*)$" "?xem=ds_tatcatrangsuc&menu_id=6&field=gia_ban&sort=desc%20&page=$1"
+
+
+RewriteRule "^blog/tin-tuc/(.*)-(.*).html$" "?xem=chi-tiet-tin-tuc&tin-tuc&$1&id_tin=$2"
+RewriteRule "^blog/kien-thuc-trang-suc/(.*)-(.*).html$" "?xem=chi-tiet-tin-tuc&kien-thuc-trang-suc&$1&id_tin=$2"

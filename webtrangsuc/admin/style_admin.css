@@ -1,0 +1,318 @@
+#content {
+    padding-bottom: 0px;
+}
+
+#home_admin {
+  background-color: #4d4e63;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.login {
+	width: 420px;
+    background: #ffffff;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login .form h2 {
+	background: #f5f5fa;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 40px;
+    font-weight: 200;
+    color: #9596A2;
+    font-size: 19px;	
+}
+
+.login .form .form-field {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    margin: 0 40px 30px 40px;
+    border-bottom: 1px solid #9596A2;
+}
+
+.login .form .form-field label {
+    width: 10px;
+    padding: 0 15px 0 0;
+    color: #9596A2;
+}
+.fa {
+    padding: 0;
+    width: 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+	color: black;
+}
+
+.login .form .form-field input {
+    width: 100%;
+    background: transparent;
+    color: #9596A2;
+    padding: 15px;
+    border: 0;
+    margin: 0;
+	outline: none;
+}
+
+.login .form .button {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0 40px 45px 40px;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+.login .form .button .arrow-wrapper {
+    transition: all 0.45s ease-in-out;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 55px;
+    right: 0;
+    float: right;
+    background: linear-gradient(90deg, #04DFBD, #00FCD1);
+    box-shadow: 0 3px 20px rgba(0, 252, 209, 0.4);
+    border-radius: 12px;
+}
+
+.login .form .button .button_text {
+    transition: all 0.45s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+/* css top home admin */
+#home_page_admin .top_home {
+	background-color: #333; 
+	color: white; 
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top_home_left {
+    display: flex;
+}
+
+.administrator p,
+.web_chinh p {
+	padding: 13px 50px;
+    border-right: 1px solid white;
+	margin: 0px;
+}
+
+.web_chinh a,
+.web_chinh a:hover {
+	text-decoration: none;
+	color: white;	
+}
+
+.thongtin_admin {
+	display: flex;	
+	align-items: center;
+}
+
+.top_home_right .thongtin_admin .dropdown .btn {
+	line-height: 3.1;
+	background: none;
+    border: none;
+    outline: none;	
+}
+
+.top_home_right .thongtin_admin .dropdown {
+	padding: 12px 50px 12px 12px;
+}
+
+.dropdown a,
+.dropdown a:hover,
+.dropdown a:focus {
+	text-decoration: none;
+	color: white;	
+}
+
+.dropdown span {
+    margin-left: 10px;
+}
+
+
+
+
+
+/* css main home admin */
+
+.main_home {
+	display: flex;
+}
+
+
+/* css menu admin */
+
+.main_left {
+	width: 17%;	
+}
+.menu_admin {
+	display: flex;
+    flex-direction: column;
+	background-color: #f5f5f5;
+	box-shadow: 3px 3px 3px #efefef;
+	border-right: 1px solid #d1d0d0;
+}
+
+.main_top li,
+.menu_admin li {
+	padding: 15px 10px;	
+	list-style-type: none;
+	border-bottom: 1px solid #d1d0d0;
+}
+
+.menu_admin li a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;	
+}
+
+.menu_admin li:hover {
+	background-color: white;
+}
+
+.menu_admin li span {
+	padding-right: 5px;	
+}
+
+
+/* css main content */
+.main_content {
+	padding: 15px;
+}
+
+/* css main right */
+.main_right {
+	width: 83%;	
+}
+/* css main top */
+.main_top {
+	background-color: #f5f5f5;
+	color: #081ced;
+	font-weight: 500;
+}
+
+.tac_vu {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.them_moi a, .them_moi a:hover {
+	text-decoration: none;
+    color: white;	
+}
+
+.them_moi li {
+	padding: 10px 20px;
+    background: #428bca;
+    list-style-type: none;
+	border-radius: 5px;
+}
+
+.tim_kiem input,
+.sap_xep_sp_admin select {
+	border: 1px solid #d1d0d0;
+    padding: 5px;
+	outline: none;
+}
+
+.tim_kiem button {
+	border: 1px solid #d1d0d0;
+    padding: 5px;
+}
+
+.sap_xep_sp_admin {
+	display: flex;
+    align-items: center;
+}
+
+.sap_xep_sp_admin h5 {
+	margin-bottom: 0px;
+	padding-right: 5px	
+}
+
+
+
+
+
+/* css table sản phẩm*/
+.table_sp {
+	padding: 15px 0px;	
+}
+
+.top_table {
+	display: flex;
+    align-items: center;
+	border: 1px solid #d1d0d0;
+}
+
+.thongtin_sanpham {
+	display: flex;
+    align-items: center;
+	border: 1px solid #d1d0d0;
+	border-bottom: none;
+}
+
+.top_table .tt-sp {
+	list-style-type: none;
+	border-right: 1px solid #d1d0d0;
+	font-weight: 500;
+	text-align: center;
+	padding: 5px 2px;
+	display:flex;
+	justify-content: center;
+	
+}
+
+.main_table .tt-sp {
+	list-style-type: none;
+	border-right: 1px solid #d1d0d0;
+	text-align: center;
+	padding: 2px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+}
+
+.main_table .tt-sp p {
+	margin: 0px;	
+}
+
+
+
+
